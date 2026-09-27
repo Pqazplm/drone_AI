@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.21.0
+opencv-python-headless>=4.5.0; platform_system != "Linux" or arm_version < 7
+opencv-python>=4.5.0; platform_system == "Linux" and arm_version >= 7
+picamera2>=0.3.0
+
+# TFLite runtime (install one of the following)
+ai-edge-litert>=1.0.0
+# tflite-runtime>=2.14.0  # fallback: pip install tflite-runtime
+
+# Optional: marker guidance over MSP (Betaflight)
+pyserial>=3.5
